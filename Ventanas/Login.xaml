@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sSandovalExamen.Ventanas.Login"
+             Title="Login">
+    <VerticalStackLayout>
+        <Label 
+            Text="Login"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            TextColor="Red" />
+
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"
+               WidthRequest="100"/>
+        
+        <Entry x:Name ="txtUsuario"
+               Placeholder="Ingrese el Usuario"/>
+
+        <Entry x:Name ="txtContraseña"
+               Placeholder="Ingrese el Contraseña"
+               IsPassword="True" />
+        
+        <Button x:Name="btnInicio"
+                Text="INICIAR SECCION"
+                Clicked="btnInicio_Clicked"/>
+
+        <Label 
+            Text="Usuario Conectado"
+            HorizontalTextAlignment="Start"
+            FontSize="20" />
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

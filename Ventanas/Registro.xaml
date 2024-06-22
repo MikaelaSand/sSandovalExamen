@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sSandovalExamen.Ventanas.Registro"
+             Title="Registro">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+
+        <Label
+            Text="REGISTRO"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            TextColor="BlueViolet" />
+
+        <Label x:Name="lblBienvenido"
+          HorizontalTextAlignment="Center"
+          FontSize="20"
+          TextColor="BlueViolet" />
+
+
+        <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+
+    
+                <Label Text="Fecha:"
+                       Grid.Row="0" 
+                       Grid.Column="0" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="End" />
+                
+                <DatePicker x:Name="datePickerFecha"
+                            Grid.Row="0" Grid.Column="1" 
+                            VerticalOptions="Center" />
+
+
+                <Label Text="País:" 
+                       Grid.Row="1" 
+                       Grid.Column="0" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="End" />
+                    
+                <Picker x:Name="pickerPais" 
+                        Grid.Row="1" Grid.Column="1" 
+                        VerticalOptions="Center">
+                  
+                    
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                        <x:String>PAIS</x:String>
+                        <x:String>COLOMBIA</x:String>
+                        <x:String>LONDRES</x:String>
+                        <x:String>ECUADOR</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+                <Label Text="Ciudad:" 
+                       Grid.Row="2" 
+                       Grid.Column="0" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="End" />
+                    
+                <Picker x:Name="pickerCiudad" 
+                        Grid.Row="2" 
+                        Grid.Column="1" 
+                        VerticalOptions="Center">
+         
+                    
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                        <x:String>CIUDAD</x:String>
+                        <x:String>MEDELLIN</x:String>
+                        <x:String>REINO UNIDO</x:String>
+                        <x:String>QUITO</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+  
+                    
+                <Label Text="Monto Inicial:" 
+                       Grid.Row="3" 
+                       Grid.Column="0" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="End" />
+                    
+                <Entry x:Name="txtMontoInicial" 
+                       Grid.Row="3" 
+                       Grid.Column="1" 
+                       VerticalOptions="Center" />
+
+   
+                <Button Text="Calcular Pago Inicial" 
+                        Clicked="Button_Clicked" 
+                        Grid.Row="4" Grid.Column="0" 
+                        Grid.ColumnSpan="2" 
+                        HorizontalOptions="Center" />
+
+                    
+                <Label Text="Pago mensual:" 
+                       Grid.Row="5" Grid.Column="0" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="End" />
+                    
+                <Entry x:Name="txtPagoMensual" 
+                       Grid.Row="5" 
+                       Grid.Column="1" 
+                       VerticalOptions="Center" 
+                       IsEnabled="False" />
+            </Grid>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

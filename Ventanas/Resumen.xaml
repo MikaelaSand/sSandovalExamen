@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sSandovalExamen.Ventanas.Resumen"
+             Title="Resumen">
+    <VerticalStackLayout
+        Padding="20">
+        
+ 
+
+                    <Label Text="Usuario Conectado"
+                           FontSize="18" 
+                           HorizontalOptions="Center" 
+                           Margin="0,10,0,20" />
+
+                    <Label Text="RESUMEN" 
+                           FontSize="24" 
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold" 
+                           Margin="0,0,0,10" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="Nombre:" 
+                               Grid.Row="0" 
+                               Grid.Column="0" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="End" />
+
+            <Label x:Name="labelNombre"
+                               Grid.Row="0" 
+                               Grid.Column="1" 
+                               VerticalOptions="Center" />
+
+
+            <Label Text="Apellido:" 
+                               Grid.Row="1" 
+                               Grid.Column="0"
+                               VerticalOptions="Center" 
+                               HorizontalOptions="End" />
+
+            <Label x:Name="labelApellido" 
+                               Grid.Row="1" 
+                               Grid.Column="1" 
+                               VerticalOptions="Center" />
+
+            <Label Text="Edad:"
+
+                   
+                               Grid.Row="2" 
+                               Grid.Column="0" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="End" />
+            <Label x:Name="labelEdad" 
+                               Grid.Row="2" 
+                               Grid.Column="1"
+                               VerticalOptions="Center" />
+
+
+            <Label Text="Fecha:" 
+                               Grid.Row="3" 
+                               Grid.Column="0" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="End" />
+            <Label x:Name="labelFecha" 
+                               Grid.Row="3" 
+                               Grid.Column="1"
+                               VerticalOptions="Center" />
+
+            <Label Text="Ciudad:" 
+                               Grid.Row="4"
+                               Grid.Column="0" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="End" />
+            <Label x:Name="labelCiudad" 
+                               Grid.Row="4" 
+                               
+                               Grid.Column="1" 
+                               VerticalOptions="Center" />
+
+            <Label Text="País:" 
+                               Grid.Row="5" 
+                               Grid.Column="0" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="End" />
+            <Label x:Name="labelPais" 
+                               Grid.Row="5" Grid.Column="1" 
+                               VerticalOptions="Center" />
+
+
+            <Label Text="Monto Inicial:" 
+                               Grid.Row="6" 
+                               Grid.Column="0" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="End" />
+            <Label x:Name="labelMontoInicial" 
+                               Grid.Row="6" 
+                               Grid.Column="1" 
+                               VerticalOptions="Center" />
+
+
+            <Label Text="Pago mensual:" 
+                               Grid.Row="7" 
+                               Grid.Column="0" 
+                               VerticalOptions="Center" HorizontalOptions="End" />
+            <Label x:Name="labelPagoMensual" 
+                               Grid.Row="7" 
+                               Grid.Column="1" 
+                               VerticalOptions="Center" />
+
+
+            <Label Text="Pago Total:"
+                               Grid.Row="8" Grid.Column="0" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="End" />
+            <Label x:Name="labelPagoTotal" 
+                               Grid.Row="8" Grid.Column="1" 
+                               VerticalOptions="Center" 
+                               FontAttributes="Bold"  />
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>
